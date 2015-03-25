@@ -54,3 +54,15 @@ function provider(API, credentials) {
     return new API(credentials);
   }
 }
+
+provider.$name = 'provider';
+provider.$targets = ['coreos'];
+provider.$dashboardUrl = 'https://dashboard_link';
+provider.$referralUrl= 'https://referral_link';
+provider.$credentialSchema = {
+  token: {
+    type: 'string',
+    header: 'Some kind of autthorization token',
+    link: 'https://link_to_create_new_token'
+  }
+};
