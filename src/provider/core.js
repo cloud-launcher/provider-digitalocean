@@ -1,5 +1,29 @@
+import profile from '../profile';
 
 module.exports = provider;
+module.exports = API => {
+  const credentials = {};
+
+  const credentialSchema = {
+    token: {
+      type: 'string',
+      header: 'Some kind of autthorization token',
+      link: 'https://link_to_create_new_token'
+    }
+  };
+
+  return {
+    name: 'provider',
+    targets: ['coreos'],
+    api: provider(API, credentials),
+    $rawAPI: API,
+    profile,
+    credentials,
+    credentialSchema,
+    dashboardUrl: 'https://dashboard',
+    referralUrl: 'https://referral'
+  };
+};
 
 function provider(API, credentials) {
   const status = {
@@ -52,15 +76,3 @@ function provider(API, credentials) {
     return new API(credentials);
   }
 }
-
-provider.$name = 'provider';
-provider.$targets = ['coreos'];
-provider.$dashboardUrl = 'https://dashboard_link';
-provider.$referralUrl= 'https://referral_link';
-provider.$credentialSchema = {
-  token: {
-    type: 'string',
-    header: 'Some kind of autthorization token',
-    link: 'https://link_to_create_new_token'
-  }
-};

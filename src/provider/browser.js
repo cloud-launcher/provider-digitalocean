@@ -1,12 +1,5 @@
-import browserAPI from 'browserAPI';
-
 import core from './core';
 
-import profile from '../profile';
+import browserAPI from 'browserAPI';
 
-module.exports = credentials => {
-  return {
-    api: core(browserAPI, credentials),
-    profile
-  };
-};
+module.exports =  core(browserAPI);
