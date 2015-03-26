@@ -22,9 +22,9 @@ if (typeof result === 'string') console.log(result);
 
 gulp.task('default', ['build']);
 
-gulp.task('build', sequence('clean', 'runtime'));
+gulp.task('build', sequence('clean', ['runtime', 'copyProfile']));
 
-gulp.task('dev', ['runtime'], () => gulp.watch(paths.scripts, ['runtime']));
+gulp.task('dev', ['runtime', 'copyProfile'], () => gulp.watch(paths.scripts, ['runtime']));
 
 gulp.task('run', () => run(`node ${paths.dist}/index.js ${args.args || ''}`).exec());
 
