@@ -1,9 +1,13 @@
+import profile from '../profile';
 
-// import digitalocean from './simulator';
-// API = digitalocean(profile)(credentials);
-module.exports = profile => credentials => core(simulator(profile), credentials);
+module.exports = credentials => {
+  return {
+    api: core(simulator, credentials),
+    profile
+  };
+};
 
-function simulator(profile) {
+function simulator() {
   const state = {
     machines: []
   };

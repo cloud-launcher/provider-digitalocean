@@ -1,3 +1,10 @@
 import serverAPI from 'serverAPI';
 
-module.exports = credentials => core(serverAPI, credentials);
+import profile from './profile';
+
+module.exports = credentials => {
+  return {
+    api: core(serverAPI, credentials),
+    profile
+  };
+};
