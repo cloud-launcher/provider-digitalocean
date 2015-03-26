@@ -21,8 +21,6 @@ function digitalocean(API, credentials) {
 
     status,
 
-    getAPI,
-
     MAX_CONCURRENT_CALLS: 5
   };
 
