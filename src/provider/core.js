@@ -26,7 +26,7 @@ function digitalocean(API, credentials) {
 
   function createMachine(description) {
     const api = getApi(),
-          {id, location, size, image, keys, userData} = machineDescription;
+          {id, location, size, image, keys, userData} = description;
 
     return promise(
       api.dropletsCreateNewDroplet.bind(api),
