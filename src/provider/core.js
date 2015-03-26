@@ -23,7 +23,8 @@ module.exports = API => {
     credentials,
     credentialSchema,
     dashboardUrl: 'https://cloud.digitalocean.com',
-    referralUrl: 'https://www.digitalocean.com/?refcode=4df1a6f6f727'
+    referralUrl: 'https://www.digitalocean.com/?refcode=4df1a6f6f727',
+    referralTeaser: 'Signup for a DigitalOcean account through this referral link to get $10 in free credits and to support cloud-launcher.'
   };
 };
 
