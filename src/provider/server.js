@@ -1,12 +1,5 @@
-import DOWrapper from 'do-wrapper';
-
 import core from './core';
 
-import profile from '../profile';
+import DOWrapper from 'do-wrapper';
 
-module.exports = credentials => {
-  return {
-    api: core(DOWrapper, credentials),
-    profile
-  };
-};
+module.exports = () => core(DOWrapper);

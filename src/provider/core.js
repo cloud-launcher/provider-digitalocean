@@ -1,7 +1,31 @@
 import promise from 'promise-callback';
 import _ from 'lodash';
 
-module.exports = digitalocean;
+import profile from '../profile';
+
+module.exports = API => {
+  const credentials = {};
+
+  const credentialSchema = {
+    token: {
+      type: 'string',
+      header: 'Personal Access Token',
+      link: 'https://cloud.digitalocean.com/settings/tokens/new'
+    }
+  };
+
+  return {
+    name: 'digitalocean',
+    targets: ['coreos'],
+    api: digitalocean(API, credentials),
+    $rawAPI: API,
+    profile,
+    credentials,
+    credentialSchema,
+    dashboardUrl: 'https://cloud.digitalocean.com',
+    referralUrl: 'https://www.digitalocean.com/?refcode=4df1a6f6f727'
+  };
+};
 
 function digitalocean(API, credentials) {
   const status = {
@@ -149,15 +173,3 @@ function digitalocean(API, credentials) {
     }, {});
   }
 }
-
-digitalocean.$name = 'digitalocean';
-digitalocean.$targets = ['coreos'];
-digitalocean.$dashboardUrl = 'https://cloud.digitalocean.com';
-digitalocean.$referralUrl= 'https://www.digitalocean.com/?refcode=4df1a6f6f727';
-digitalocean.$credentialSchema = {
-  token: {
-    type: 'string',
-    header: 'Personal Access Token',
-    link: 'https://cloud.digitalocean.com/settings/tokens/new'
-  }
-};

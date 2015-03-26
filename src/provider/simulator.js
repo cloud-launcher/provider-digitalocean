@@ -1,13 +1,6 @@
 import core from './core';
 
-import profile from '../profile';
-
-module.exports = credentials => {
-  return {
-    api: core(simulator, credentials),
-    profile
-  };
-};
+module.exports = () => core(simulator());
 
 function simulator() {
   const state = {
