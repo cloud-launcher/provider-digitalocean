@@ -1,5 +1,5 @@
-import createProfile from './createProfile';
+import profile from './profile';
 
 module.exports = {
-  createProfile
+  profile
 };
