@@ -1,4 +1,26 @@
 {
-  "sizes": [],
-  "locations": []
+  "name": "Display_Name",
+  "sizes": {
+    "size_name": {
+      "id": "size_name",
+      "memory": 1, // In MB
+      "cpus": 1, // In threads/cores
+      "disk": 1, // In GB
+      "transfer": 1, // In GB/Month
+      "price_monthly": 1, // In $ (or local currency?)
+      "price_hourly": 1, // In $ (or local currency?)
+      "locations": ["location_id1", "location_id2"] // Locations this size is available at
+    }
+  },
+  "locations": {
+    "location_name": {
+      "id": "location_name",
+      "vicinity": "more friendly name",
+      "physicalLocation": {
+        "lat": 0, // Latitude component
+        "long": 0, // Longitude component
+      },
+      "sizes": ["size_name1", "size_name2"] // Sizes available at this location
+    }
+  }
 }
