@@ -1,1 +1,3 @@
-console.log('You should put your tests here yo!');
+import browser from '../provider/browser';
+
+console.log(browser);
