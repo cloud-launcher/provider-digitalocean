@@ -128,7 +128,7 @@ function digitalocean(API, credentials) {
     });
   }
 
-  function getAPI() {
+  function getApi() {
     return new API(credentials.token, 1000);
   }
 

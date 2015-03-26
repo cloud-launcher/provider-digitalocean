@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A `cloud-launcher` provider for `DigitalOcean",
   "repository": "https://github.com/cloud-launcher/provider-digitalocean",
-  "main": "index.js",
+  "main": ".dist",
   "author": "Blake La Pierre",
   "license": "MIT",
   "devDependencies": {
