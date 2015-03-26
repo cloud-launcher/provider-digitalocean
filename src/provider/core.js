@@ -21,7 +21,8 @@ module.exports = API => {
     credentials,
     credentialSchema,
     dashboardUrl: 'https://dashboard',
-    referralUrl: 'https://referral'
+    referralUrl: 'https://referral',
+    referralTeaser: ''
   };
 };
 
