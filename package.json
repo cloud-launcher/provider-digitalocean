@@ -1,6 +1,6 @@
 {
   "name": "provider-digitalocean",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A `cloud-launcher` provider for `DigitalOcean",
   "repository": "https://github.com/cloud-launcher/provider-digitalocean",
   "main": ".dist",
