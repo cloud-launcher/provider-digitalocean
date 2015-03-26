@@ -1,4 +1,11 @@
-module.exports = credentials => core(simulator, credentials);
+import profile from '../profile';
+
+module.exports = credentials => {
+  return {
+    api: core(simulator, credentials),
+    profile
+  };
+};
 
 function simulator() {
 
