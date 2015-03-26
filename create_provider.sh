@@ -13,6 +13,8 @@ git remote rename origin upstream
 git remote add origin git@github.com:cloud-launcher/$PROVIDER_DIR
 
 git rm create_provider.sh
-git commit -m "Removed create_provider.sh script"
+git rm Readme.md
+git mv Readme.provider.md Readme.md
+git commit -m "New provider initialization"
 
 git push origin master
