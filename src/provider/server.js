@@ -1,6 +1,6 @@
 import serverAPI from 'serverAPI';
 
-import profile from './profile';
+import profile from '../profile';
 
 module.exports = credentials => {
   return {
