@@ -1,8 +1,8 @@
 {
-  "name": "base-node",
-  "version": "0.0.4",
-  "description": "Base Node.JS Development Environment",
-  "repository": "https://github.com/blakelapierre/base-node",
+  "name": "provider-digitalocean",
+  "version": "0.0.1",
+  "description": "A `cloud-launcher` provider for `DigitalOcean",
+  "repository": "https://github.com/cloud-launcher/provider-digitalocean",
   "main": "index.js",
   "author": "Blake La Pierre",
   "license": "MIT",
