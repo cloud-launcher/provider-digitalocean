@@ -177,6 +177,10 @@
     "sfo1": {
       "id": "sfo1",
       "vicinity": "San Francisco 1",
+      "physicalLocation": {
+        "lat": 37.774929,
+        "long": -122.419416
+      },
       "sizes": [
         "2gb",
         "1gb",
@@ -186,6 +190,10 @@
     "ams2": {
       "id": "ams2",
       "vicinity": "Amsterdam 2",
+      "physicalLocation": {
+        "lat": 52.370216,
+        "long": 4.895168
+      },
       "sizes": [
         "32gb",
         "16gb",
@@ -201,6 +209,10 @@
     "sgp1": {
       "id": "sgp1",
       "vicinity": "Singapore 1",
+      "physicalLocation": {
+        "lat": 1.352083,
+        "long": 103.819836
+      },
       "sizes": [
         "32gb",
         "16gb",
@@ -216,6 +228,10 @@
     "lon1": {
       "id": "lon1",
       "vicinity": "London 1",
+      "physicalLocation": {
+        "lat": 51.507351,
+        "long": -0.127758
+      },
       "sizes": [
         "32gb",
         "16gb",
@@ -231,6 +247,10 @@
     "nyc3": {
       "id": "nyc3",
       "vicinity": "New York 3",
+      "physicalLocation": {
+        "lat": 40.712784,
+        "long": -74.005941
+      },
       "sizes": [
         "32gb",
         "16gb",
@@ -246,6 +266,10 @@
     "ams3": {
       "id": "ams3",
       "vicinity": "Amsterdam 3",
+      "physicalLocation": {
+        "lat": 52.370216,
+        "long": 4.895168
+      },
       "sizes": [
         "32gb",
         "16gb",
