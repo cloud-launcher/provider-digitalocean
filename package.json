@@ -22,11 +22,14 @@
     "gulp-tasks": "0.0.2",
     "gulp-traceur": "^0.17.0",
     "gulp-util": "^3.0.4",
+    "lodash": "^3.6.0",
     "promise-callback": "^3.0.0",
     "traceur": "0.0.86",
     "traceur-runtime": "0.0.59"
   },
   "dependencies": {
+    "do-wrapper": "^0.2.3",
+    "do-wrapper-browser": "^0.1.2",
     "minimist": "^1.1.0"
   }
 }

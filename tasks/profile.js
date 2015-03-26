@@ -1,4 +1,6 @@
 import fs from 'fs';
+
+import DOWrapper from 'do-wrapper';
 import promise from 'promise-callback';
 
 import pipe from 'gulp-pipe';
@@ -6,8 +8,8 @@ import pipe from 'gulp-pipe';
 module.exports = (gulp) => {
   gulp.task('createProfile', ['runtime'], () => {
     const create = require('../.dist/profile/create'),
-          API = () => {},
-          credentials = {};
+          API = DOWrapper,
+          credentials = process.env.DO_TOKEN;
 
     return create(API, credentials)
       .then(
