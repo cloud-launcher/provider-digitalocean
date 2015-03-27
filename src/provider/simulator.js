@@ -37,6 +37,8 @@ function simulator() {
     };
 
     function dropletsCreateNewDroplet(name, location, size, image, options, callback) {
+      ratelimit();
+
       const {ssh_keys, user_data} = options || {},
             {machines} = state;
 
@@ -74,6 +76,8 @@ function simulator() {
     }
 
     function dropletsDeleteDroplet(id, callback) {
+      ratelimit();
+
       const {machines} = state,
             machine = machines[id];
 
@@ -88,6 +92,8 @@ function simulator() {
     }
 
     function dropletsGetAll(callback) {
+      ratelimit();
+
       const {machines} = state;
 
       callback(undefined, [{
@@ -108,7 +114,8 @@ function simulator() {
     }
 
     function account(callback) {
-      console.log(callback);
+      ratelimit();
+
       if (credentials) callback(undefined, [{account:{droplet_limit:1000}}, response]);
       else callback(new Error('Credentials not defined!'));
     }
