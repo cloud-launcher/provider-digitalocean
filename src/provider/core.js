@@ -3,6 +3,8 @@ import _ from 'lodash';
 
 import profile from '../profile';
 
+require('traceur-runtime');
+
 module.exports = API => {
   const credentials = {};
 
