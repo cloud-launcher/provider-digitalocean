@@ -6,15 +6,15 @@ const blacklist = {locations: ['nyc2']};
 //  location of the datacenters. If you know the actual locations, please
 //  update!
 const physicalLocations = {
-  ams1: {lat: 52.370216, long: 4.895168},
-  ams2: {lat: 52.370216, long: 4.895168},
-  ams3: {lat: 52.370216, long: 4.895168},
-  lon1: {lat: 51.507351, long: -0.127758},
-  nyc1: {lat: 40.712784, long: -74.005941},
-  nyc2: {lat: 40.712784, long: -74.005941},
-  nyc3: {lat: 40.712784, long: -74.005941},
-  sgp1: {lat: 1.352083,  long: 103.819836},
-  sfo1: {lat: 37.774929, long: -122.419416}
+  ams1: {lat: 52.370216, lon: 4.895168},
+  ams2: {lat: 52.370216, lon: 4.895168},
+  ams3: {lat: 52.370216, lon: 4.895168},
+  lon1: {lat: 51.507351, lon: -0.127758},
+  nyc1: {lat: 40.712784, lon: -74.005941},
+  nyc2: {lat: 40.712784, lon: -74.005941},
+  nyc3: {lat: 40.712784, lon: -74.005941},
+  sgp1: {lat: 1.352083,  lon: 103.819836},
+  sfo1: {lat: 37.774929, lon: -122.419416}
 };
 
 module.exports = (DOWrapper, DOToken) => {

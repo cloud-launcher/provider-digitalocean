@@ -77,7 +77,8 @@
         "nyc3",
         "ams3",
         "nyc1",
-        "ams2"
+        "ams2",
+        "sfo1"
       ]
     },
     "8gb": {
@@ -96,7 +97,8 @@
         "lon1",
         "nyc3",
         "ams3",
-        "ams2"
+        "ams2",
+        "sfo1"
       ]
     },
     "16gb": {
@@ -115,7 +117,8 @@
         "nyc2",
         "ams1",
         "ams3",
-        "ams2"
+        "ams2",
+        "sfo1"
       ]
     },
     "32gb": {
@@ -133,7 +136,8 @@
         "lon1",
         "ams3",
         "nyc3",
-        "ams2"
+        "ams2",
+        "sfo1"
       ]
     },
     "48gb": {
@@ -151,7 +155,8 @@
         "nyc2",
         "ams3",
         "nyc3",
-        "ams2"
+        "ams2",
+        "sfo1"
       ]
     },
     "64gb": {
@@ -169,7 +174,8 @@
         "lon1",
         "ams3",
         "nyc3",
-        "ams2"
+        "ams2",
+        "sfo1"
       ]
     }
   },
@@ -179,12 +185,18 @@
       "vicinity": "San Francisco 1",
       "physicalLocation": {
         "lat": 37.774929,
-        "long": -122.419416
+        "lon": -122.419416
       },
       "sizes": [
+        "32gb",
+        "16gb",
         "2gb",
         "1gb",
-        "512mb"
+        "4gb",
+        "8gb",
+        "512mb",
+        "64gb",
+        "48gb"
       ]
     },
     "ams2": {
@@ -192,7 +204,7 @@
       "vicinity": "Amsterdam 2",
       "physicalLocation": {
         "lat": 52.370216,
-        "long": 4.895168
+        "lon": 4.895168
       },
       "sizes": [
         "32gb",
@@ -211,7 +223,7 @@
       "vicinity": "Singapore 1",
       "physicalLocation": {
         "lat": 1.352083,
-        "long": 103.819836
+        "lon": 103.819836
       },
       "sizes": [
         "32gb",
@@ -230,7 +242,7 @@
       "vicinity": "London 1",
       "physicalLocation": {
         "lat": 51.507351,
-        "long": -0.127758
+        "lon": -0.127758
       },
       "sizes": [
         "32gb",
@@ -249,7 +261,7 @@
       "vicinity": "New York 3",
       "physicalLocation": {
         "lat": 40.712784,
-        "long": -74.005941
+        "lon": -74.005941
       },
       "sizes": [
         "32gb",
@@ -268,7 +280,7 @@
       "vicinity": "Amsterdam 3",
       "physicalLocation": {
         "lat": 52.370216,
-        "long": 4.895168
+        "lon": 4.895168
       },
       "sizes": [
         "32gb",
