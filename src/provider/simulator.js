@@ -119,6 +119,8 @@ function simulator() {
     const {ssh_keys, user_data} = options || {},
           {machines} = state;
 
+    console.log('Creating machine', arguments);
+
     if (machines[name]) {
       throw new Error(`Machine ${name} already exists!`);
     }

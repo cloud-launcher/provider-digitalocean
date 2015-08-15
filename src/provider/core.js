@@ -12,7 +12,9 @@ module.exports = API => {
     token: {
       type: 'string',
       header: 'Personal Access Token',
-      link: 'https://cloud.digitalocean.com/settings/tokens/new'
+      link: 'https://cloud.digitalocean.com/settings/tokens/new',
+      required: true,
+      environmentVariable: 'DO_TOKEN'
     }
   };
 
