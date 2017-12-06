@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["provider/browser.js"],"sourcesContent":["import core from './core';\n\nimport DOWrapper from 'do-wrapper-browser';\n\nmodule.exports = () => core(DOWrapper);\n"],"file":"provider/browser.js","sourceRoot":"/source/"}

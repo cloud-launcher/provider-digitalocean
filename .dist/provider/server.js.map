@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["provider/server.js"],"sourcesContent":["import core from './core';\n\nimport DOWrapper from 'do-wrapper';\n\nmodule.exports = () => core(DOWrapper);\n"],"file":"provider/server.js","sourceRoot":"/source/"}
